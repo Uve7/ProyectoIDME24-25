@@ -48,7 +48,7 @@ def dibujaPantalla (): #controla parámetros de la pantalla
                 #blit dibuja una imagen dentro de otra, el texto text en la coordenada text_rect
                 screen.blit(text,text_rect) 
 
-            #diferentes mensajes depdneindo de si gaans o pierdes                    
+            #diferentes mensajes dependiendo de si ganas o pierdes                    
             if gameWon:
                 text = fuenteMensaje.render("¡Enhorabuena! Has ganado, presiona R para reiniciar", True, constantes.rojo) #mensaje, suavizado, color
                 screen.blit(text, (50, constantes.ScreenHeight // 2-20)) #posicion del texto
